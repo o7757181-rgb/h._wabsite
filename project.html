@@ -1,0 +1,64 @@
+
+<head>
+  <meta charset="UTF-8">
+  <title>BMW Project</title>
+  <link rel="stylesheet" href="pro.css">
+</head>
+<body>
+<header>
+  <nav>
+    <a href="fils.html">HOME</a>
+    <a href="project.html">Products</a>
+    <a href="about.html">ABOUT</a>
+    <a href="GARLLY.HTML">GALLERY</a>
+    <a href="">CONTECT</a>
+    </nav>
+  </Header>
+<br>
+<br>
+<br>
+<!-- 🟣 MAIN TITLE -->
+<h1 class="title">BMW Project</h1>
+
+<!-- 🟡 IMAGE SECTION -->
+<div class="gallery">
+
+  <img src="c:\Users\hani\Downloads\R8 in my top five favorite.jpg"
+       onclick="showCar('BMW 3 Series', '$45,000', 'Luxury sedan with powerful engine and modern design.')">
+
+  <img src="c:\Users\hani\Downloads\M2 but Barbie edition.jpg"
+       onclick="showCar('BMW X5', '$65,000', 'Luxury SUV with comfort and power.')">
+
+  <img src="c:\Users\hani\Downloads\BMW G80 M3.jpg"
+       onclick="showCar('BMW i8', '$150,000', 'Futuristic hybrid sports car.')">
+
+</div>
+<script>
+function showCar(model, price, desc) {
+  document.getElementById("detailsBox").innerHTML = `
+    <h2>${model}</h2>
+    <h3>Price: ${price}</h3>
+    <p>${desc}</p>
+  `;
+}
+</script>
+
+<!-- 🔵 DETAILS BOX -->
+<div class="details" id="detailsBox">
+  <h2>Click on a BMW image</h2>
+</div>
+<div class="gallery">
+
+  <img src="c:\Users\hani\Downloads\1148488342484300917.jpg"
+       onclick="showCar('BMW m5 Series', '$50,000', 'Luxury sedan with powerful engine and modern design.')">
+
+  <img src="c:\Users\hani\Downloads\ᦓꪖꪜꫀ = ᠻꪮꪶꪶꪮ᭙.jpg"
+       onclick="showCar('BMW m6', '$70,000', 'Luxury SUV with comfort and power.')">
+
+  <img src="c:\Users\hani\Downloads\Bmw m4★.jpg"
+       onclick="showCar('BMW m4', '$250,000', 'Futuristic hybrid sports car.')">
+
+</div>
+</script>
+</body>
+</html>
